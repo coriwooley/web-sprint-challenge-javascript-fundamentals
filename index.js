@@ -16,7 +16,7 @@ function myFunction() {
 myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
-
+//The nested function has access to the outer functions variables because it is defined within the same block of code. It is reaching up for the variable. It wouldnt be able to reach down for it.
 
 
 
