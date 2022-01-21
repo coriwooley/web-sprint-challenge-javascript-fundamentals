@@ -24,15 +24,39 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read.
 
-1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
+1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each.
+
+'.map' returns a new array filled with the elements. The resulting array is from calling a function on every element in the array that '.map' was used on. You could use '.map' if you wanted to double number elements in an array.
+
+'.reduce' returns a single value resulting from the values provided by adding or multiplying. You could use '.reduce' if you were trying to get a total population, total deaths/births, total wins/losses, total amount spent. (could get an average of those things with a second step using example.length)
+
+'.filter' returns a new array if the return statement you have provided returns 'true'. You could use '.filter' if you wanted to return an array of people living in the same area, cities with large populations, animal babysitters that just accept dogs,etc.
+-----------------------------------------------------------------------------------------------------------------------------------
 
 2. Explain the difference between a callback and a higher order function.
 
+A callback function is a function meant to be passed into a higher order function as an argument.
+A higher order function accepts a callback function as one of its arguments.
+-----------------------------------------------------------------------------------------------------------------------------------
+
 3. Explain what a closure is.
+
+
+A closure is when a inner function(nested function) reaches up into the outer function(the function it was created within) to grab a value.
+-----------------------------------------------------------------------------------------------------------------------------------
 
 4. Describe the four principles of the 'this' keyword.
 
+window binding: if no other bindings apply, will return the window or undefined. (we don't want this)
+implicit binding: when the function is invoked, 'this' refers to what is left of the dot
+explicit binding: call, apply, or bind is used. you can make a function use a certain object with 'this' keyword
+new binding: When creating a new object with a constructor function, 'this' binds to the NEW object
+------------------------------------------------------------------------------------------------------------------------------------
+
 5. Why do we need super() in an extended class?
+
+'super()' is needed to adopt the attributes of the parent/base Class. Using 'super()' in making an child/extended Class is basically the same thing as using '.call(this,)' on a child/extended Constructor function.
+-------------------------------------------------------------------------------------------------------------------------------------
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
