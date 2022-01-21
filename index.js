@@ -117,8 +117,8 @@ const zooAnimals = [
     * The consume function should return the invocation of cb, passing a and b into cb as arguments
   */
 
-  function consume(/*Your Code Here */){
-    /*Your Code Here */
+  function consume(item1, item2, cbFunc){
+    return cbFunc(item1, item2);
   }
  
   
